@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/abhay-tank/mongodb-nodejs/issues"
   },
-  "homepage": "https://github.com/abhay-tank/mongodb-nodejs#readme"
+  "homepage": "https://github.com/abhay-tank/mongodb-nodejs#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.11.7"
+  }
 }
