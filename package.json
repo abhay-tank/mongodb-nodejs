@@ -1,0 +1,24 @@
+{
+  "name": "mongooes-nodejs",
+  "version": "1.0.0",
+  "description": "Connection of nodejs and mongodb using mongoose",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhay-tank/mongodb-nodejs.git"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "nodejs"
+  ],
+  "author": "Abhay Tank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhay-tank/mongodb-nodejs/issues"
+  },
+  "homepage": "https://github.com/abhay-tank/mongodb-nodejs#readme"
+}
