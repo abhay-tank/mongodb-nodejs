@@ -2,9 +2,9 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
 const { config } = require("./configuration/config");
-const Task = require("./models/taskSchema");
+const Todo = require("./models/todoSchema");
 mongoose.connect(
-	config.DATABASE_URL,
+	config.REMOTE_DATABASE_URL,
 	{ useNewUrlParser: true, useUnifiedTopology: true },
 	(err, connection) => {
 		if (err) {
@@ -12,9 +12,18 @@ mongoose.connect(
 			return err;
 		}
 		console.log("Connected");
-		Task.create({
-			todoContent: "Learn Mongoose",
+		let todo = new Todo({
+			todoContent: "",
 			todoCompleted: false,
 		});
+		todo
+			.save()
+			.then((result) => {
+				console.log("Added", result);
+			})
+			.catch((err) => {
+				console.error(err);
+			});
+		Todo.findOneAndUpdate();
 	}
 );

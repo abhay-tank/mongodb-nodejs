@@ -23,6 +23,7 @@
   "homepage": "https://github.com/abhay-tank/mongodb-nodejs#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "mongoose": "^5.11.7"
+    "mongoose": "^5.11.7",
+    "uniqid": "^5.2.0"
   }
 }
